@@ -20,6 +20,8 @@ class BankAccount
   
   def valid?
     if balance > 0
+      "open"
+    elsif balance == 
     
   end
 

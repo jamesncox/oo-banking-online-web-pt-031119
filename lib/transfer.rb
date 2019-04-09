@@ -12,8 +12,10 @@ class Transfer
   end
   
   def valid?
-    sender.valid?
-    binding.pry
+      if @status == "open" && @balance > 0
+      true
+    else
+      false
   end
   
 end

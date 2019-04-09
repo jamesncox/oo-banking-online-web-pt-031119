@@ -27,7 +27,7 @@ class Transfer
       receiver.deposit(amount)
       @status = "complete"
     end
-    # binding.pry
+    binding.pry
   end
   
   def reverse_transfer

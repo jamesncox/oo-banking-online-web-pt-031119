@@ -12,11 +12,7 @@ class Transfer
   end
   
   def valid?
-      if @status == "open" && @balance > 0
-      true
-    else
-      false
-    end
+    if send
   end
   
 end

@@ -19,6 +19,7 @@ class Transfer
     if @sender.balance < amount
       @status = "rejected"
       
+      
       # sender.balance -= amount
       # receiver.balance += amount
       

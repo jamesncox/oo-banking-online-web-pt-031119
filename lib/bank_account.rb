@@ -19,7 +19,7 @@ class BankAccount
   end
   
   def valid?
-    if 
+    if balance > 0
     
   end
 

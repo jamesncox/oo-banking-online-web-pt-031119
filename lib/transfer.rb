@@ -23,8 +23,7 @@ class Transfer
       @status = "complete"
       "You done did it."
     else
-      @sender.balance -= amount
-      @receiver.balance += amount
+      @sender.
     end
   end
   

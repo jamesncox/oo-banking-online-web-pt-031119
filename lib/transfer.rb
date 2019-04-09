@@ -1,8 +1,8 @@
 require 'pry'
 
 class Transfer
-  attr_accessor :status
-  attr_reader :sender, :receiver, :amount
+  attr_accessor :status, :sender, :receiver, :amount, :count
+  # attr_reader :sender, :receiver, :amount
   
   def initialize(sender, receiver, amount)
     @sender = sender
@@ -20,8 +20,8 @@ class Transfer
       @status = "rejected"
       "Transaction rejected. Please check your account balance."
     elsif
-      @status = "complete"
-      
+      @status == "complete"
+      "Transaction was already executed."
     else
       sender.deposit(amount * (-1))
       receiver.deposit(amount)

@@ -30,4 +30,9 @@ class Transfer
     # binding.pry
   end
   
+  def reverse_transfer
+    
+    
+  end
+  
 end

@@ -25,13 +25,9 @@ class Transfer
     else
       @sender.deposit(@amount*-1)
       @receiver.deposit(@amount)
+      binding.pry
       status = "complete"
     end
   end
-  
-  # def execute_transaction
-  #   @sender.deposit(@amount * -1) 
-  #   @receiver.deposit(@amount)
-  # end
   
 end

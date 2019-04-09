@@ -12,9 +12,8 @@ class BankAccount
   
   def deposit(deposit_amount)
     self.balance += deposit_amount
-    binding.pry
   end
   
-  
+  def 
 
 end

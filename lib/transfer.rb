@@ -10,7 +10,7 @@ class Transfer
   end
   
   def valid?
-    sender.amount && receiver.amount 
+    sender.amount && receiver.amount > 0 
   end
   
 end
